@@ -22,8 +22,12 @@ export const Weather = ({ temp, condition }) => {
         <Text style={styles.temperature}>{temp}º</Text>
       </View>
       <View style={styles.halfContainer}>
-        <Text style={styles.title}>{WeatherOptions[condition].title}</Text>
-        <Text style={styles.subtitle}>{WeatherOptions[condition].subtitle}</Text>
+        <View style={styles.textContainer}>
+          <Text style={styles.title}>{WeatherOptions[condition].title}</Text>
+          <Text style={styles.subtitle}>
+            {WeatherOptions[condition].subtitle}
+          </Text>
+        </View>
       </View>
     </LinearGradient>
   );
@@ -45,6 +49,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center'
   },
+  textContainer: {
+    paddingHorizontal: 15,
+    alignItems: 'flex-start'
+  },
   icon: {
     paddingBottom: 5
   },
@@ -61,8 +69,6 @@ const styles = StyleSheet.create({
   subtitle: {
     color: 'white',
     fontWeight: '600',
-    fontSize: 30,
-    paddingHorizontal: 15,
-    alignItems: "flex-start"
+    fontSize: 30
   }
 });

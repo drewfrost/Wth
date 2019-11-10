@@ -48,7 +48,7 @@ export const WeatherOptions = {
     iconName: 'weather-fog',
     gradientColors: ['#2c3e50', '#bdc3c7'],
     title: 'Mist & Fear',
-    subtitle: 'Be prepared for Stephen King type of stuff to happen.'
+    subtitle: 'Be prepared for Stephen King type of shit to happen.'
   },
   Haze: {
     iconName: 'weather-fog',
@@ -60,7 +60,7 @@ export const WeatherOptions = {
     iconName: 'weather-fog',
     gradientColors: ['#2c3e50', '#bdc3c7'],
     title: 'Foggy',
-    subtitle: 'Stephen King of stuff already happening'
+    subtitle: 'Stephen King of shit already happening'
   },
   Dust: {
     iconName: 'weather-windy',
