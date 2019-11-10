@@ -22,8 +22,8 @@ export const Weather = ({ temp, condition }) => {
         <Text style={styles.temperature}>{temp}º</Text>
       </View>
       <View style={styles.halfContainer}>
-        <Text style={styles.title}>{WeatherOptions.title}</Text>
-        <Text style={styles.subtitle}>{WeatherOptions.subtitle}</Text>
+        <Text style={styles.title}>{WeatherOptions[condition].title}</Text>
+        <Text style={styles.subtitle}>{WeatherOptions[condition].subtitle}</Text>
       </View>
     </LinearGradient>
   );
